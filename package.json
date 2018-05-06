@@ -1,0 +1,57 @@
+{
+  "name": "pimage",
+  "version": "0.1.0",
+  "description": "progressive image loader component",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "start-storybook -p 3001 -c .storybook",
+    "build": "babel src -d dist --ignore story.js,test.js",
+    "build-stories": "build-storybook -c .storybook -o stories",
+    "lint": "eslint src/**/*.js",
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/matheusrabelo/pimage.git"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "image",
+    "responsible",
+    "adaptive",
+    "network"
+  ],
+  "author": "Matheus Freire Rabelo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matheusrabelo/pimage/issues"
+  },
+  "homepage": "https://github.com/matheusrabelo/pimage#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.4.3",
+    "@storybook/cli": "^3.4.3",
+    "@storybook/react": "^3.4.3",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-fbjs": "^2.0.1",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-flowtype": "^2.46.3",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-relay": "0.0.21",
+    "glob-loader": "^0.3.0",
+    "har-validator": "^5.1.0",
+    "jest": "^22.4.3",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
+}

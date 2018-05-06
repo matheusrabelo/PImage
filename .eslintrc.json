@@ -1,0 +1,6 @@
+{
+    "extends": ["fbjs"],
+    "rules": {
+        "indent": ["error", 4]
+    }
+}

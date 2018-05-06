@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PImage should render with a single src 1`] = `"<img style=\\"width:100%;heigth:100%\\" src=\\"http://lorempixel.com/1800/1800/animals/8\\"/>"`;
+
+exports[`PImage should render with multiple srcs 1`] = `"<img style=\\"width:100%;heigth:100%\\" src=\\"http://lorempixel.com/100/100/animals/8\\"/>"`;
