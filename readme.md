@@ -26,6 +26,9 @@ const highQuality = 'http://lorempixel.com/1600/1600/animals/6';
 <PImage srcs={[lowQuality, medQuality, highQuality]}/>
 ```
 
+## Roadmap
+[ ] Add support to srcset
+
 ## Contributions
 Stars and contributions are welcome!
 
