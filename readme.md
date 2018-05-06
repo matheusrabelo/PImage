@@ -1,6 +1,8 @@
 # &lt;PImage /&gt;
 The image component for the next generation.
 
+## [Demo](https://matheusrabelo.github.io/PImage/stories)
+
 ## About
 **PImage** is a React **P**rogressive **Image** loader component. 
 
