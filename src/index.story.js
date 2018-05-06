@@ -5,12 +5,12 @@ import { action } from '@storybook/addon-actions';
 import PImage from '.';
 
 const srcs = [
-    'http://lorempixel.com/100/100/animals/8',
-    'http://lorempixel.com/200/200/animals/8',
-    'http://lorempixel.com/800/800/animals/8',
-    'http://lorempixel.com/1200/1200/animals/8',
-    'http://lorempixel.com/1600/1600/animals/8',
-    'http://lorempixel.com/1800/1800/animals/8',
+    'https://picsum.photos/100/100?image=1025',
+    'https://picsum.photos/200/200?image=1025',
+    'https://picsum.photos/800/800?image=1025',
+    'https://picsum.photos/1200/1200?image=1025',
+    'https://picsum.photos/1600/1600?image=1025',
+    'https://picsum.photos/1800/1800?image=1025',
 ];
 
 storiesOf('PImage', module)
