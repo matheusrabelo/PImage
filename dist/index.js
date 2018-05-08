@@ -33,6 +33,10 @@ var PImage = function (_React$Component) {
         _this.state = {
             currentIndex: 0
         };
+        _this.styleDefault = {
+            width: '100%',
+            heigth: '100%'
+        };
         return _this;
     }
 
@@ -78,7 +82,8 @@ var PImage = function (_React$Component) {
         key: 'render',
         value: function render() {
             return _react2.default.createElement('img', {
-                style: { width: '100%', heigth: '100%' },
+                className: this.className || '',
+                style: this.props.style || this.styleDefault,
                 src: this.props.srcs[this.state.currentIndex] });
         }
     }]);
@@ -88,6 +93,8 @@ var PImage = function (_React$Component) {
 
 PImage.propTypes = {
     srcs: _propTypes2.default.array.isRequired,
+    style: _propTypes2.default.string.isRequired,
+    className: _propTypes2.default.string.isRequired,
     onUpdate: _propTypes2.default.func
 };
 

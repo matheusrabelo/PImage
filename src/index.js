@@ -7,6 +7,10 @@ class PImage extends React.Component {
         this.state = {
             currentIndex: 0,
         };
+        this.styleDefault = {
+            width:'100%', 
+            heigth: '100%',
+        };
     }
 
     componentDidMount() {
@@ -42,7 +46,8 @@ class PImage extends React.Component {
     render() {
         return (
             <img
-                style={{width:'100%', heigth: '100%'}}
+                className={this.className || ''}
+                style={this.props.style || this.styleDefault}
                 src={this.props.srcs[this.state.currentIndex]}/>
         );
     }
@@ -50,6 +55,8 @@ class PImage extends React.Component {
 
 PImage.propTypes = {
     srcs: PropTypes.array.isRequired,
+    style: PropTypes.string.isRequired,
+    className: PropTypes.string.isRequired,
     onUpdate: PropTypes.func,
 };
 
