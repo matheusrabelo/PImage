@@ -1,4 +1,7 @@
 # &lt;PImage /&gt;
+[![npm version](https://badge.fury.io/js/pimage.svg)](https://badge.fury.io/js/pimage)
+[![Build Status](https://travis-ci.org/matheusrabelo/PImage.svg?branch=master)](https://travis-ci.org/matheusrabelo/PImage)
+
 The image component for the next generation.
 
 ## [Demo](https://matheusrabelo.github.io/PImage/stories)
