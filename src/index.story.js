@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 
@@ -22,5 +23,28 @@ storiesOf('PImage', module)
     .add('with multiple srcs', () => (
         <PImage srcs={srcs} onUpdate={action('Updated')}/>
     ))
+
+    .add('with some styles', () => {
+        const Card = styled.div`
+            width: 400px;
+            box-shadow: 0px 0px 33px 7px rgba(0,0,0,0.48);
+            border-radius: 5px;
+            img {
+                border-radius: 5px 5px 0 0;
+            }
+        `;
+        const Title = styled.div`
+            text-align: center;
+            padding-bottom: 5px;
+        `;
+        return (
+            <Card>
+                <PImage
+                    srcs={srcs}
+                    onUpdate={action('Updated')}/>
+                <Title>Funny Dog</Title>
+            </Card>
+        );
+    })
 
 ;
