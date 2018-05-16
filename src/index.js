@@ -1,15 +1,11 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 
 class PImage extends React.Component {
     constructor() {
         super();
         this.state = {
             currentIndex: 0,
-        };
-        this.styleDefault = {
-            width:'100%', 
-            heigth: '100%',
         };
     }
 
@@ -46,8 +42,8 @@ class PImage extends React.Component {
     render() {
         return (
             <img
-                className={this.className || ''}
-                style={this.props.style || this.styleDefault}
+                className={this.props.className}
+                style={this.props.style}
                 src={this.props.srcs[this.state.currentIndex]}/>
         );
     }
@@ -55,9 +51,16 @@ class PImage extends React.Component {
 
 PImage.propTypes = {
     srcs: PropTypes.array.isRequired,
-    style: PropTypes.string.isRequired,
-    className: PropTypes.string.isRequired,
+    style: PropTypes.string,
+    className: PropTypes.string,
     onUpdate: PropTypes.func,
+};
+
+PImage.defaultProps = {
+    style: {
+        width: '100%',
+    },
+    className: '',
 };
 
 export default PImage;
