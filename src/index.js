@@ -51,7 +51,7 @@ class PImage extends React.Component {
 
 PImage.propTypes = {
     srcs: PropTypes.array.isRequired,
-    style: PropTypes.string,
+    style: PropTypes.object,
     className: PropTypes.string,
     onUpdate: PropTypes.func,
 };
@@ -59,8 +59,8 @@ PImage.propTypes = {
 PImage.defaultProps = {
     style: {
         width: '100%',
+        heigth: '100%',
     },
-    className: '',
 };
 
 export default PImage;
