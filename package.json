@@ -1,6 +1,6 @@
 {
   "name": "pimage",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "progressive image loader component",
   "main": "dist/index.js",
   "scripts": {
