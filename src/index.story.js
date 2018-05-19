@@ -1,8 +1,9 @@
-import PImage from '.';
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
+
+import PImage from '.';
 
 const srcs = [
     'https://picsum.photos/100/100?image=1025',
@@ -28,9 +29,9 @@ storiesOf('PImage', module)
             width: 400px;
             box-shadow: 0px 0px 33px 7px rgba(0,0,0,0.48);
             border-radius: 5px;
-            img {
-                border-radius: 5px 5px 0 0;
-            }
+        `;
+        const StyledPImage = styled(PImage)`
+            border-radius: 5px 5px 0 0;
         `;
         const Title = styled.div`
             text-align: center;
@@ -38,7 +39,7 @@ storiesOf('PImage', module)
         `;
         return (
             <Card>
-                <PImage
+                <StyledPImage
                     srcs={srcs}
                     onUpdate={action('Updated')}/>
                 <Title>Funny Dog</Title>
