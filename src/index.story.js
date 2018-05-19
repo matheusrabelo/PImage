@@ -1,9 +1,8 @@
+import PImage from '.';
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-
-import PImage from '.';
 
 const srcs = [
     'https://picsum.photos/100/100?image=1025',
